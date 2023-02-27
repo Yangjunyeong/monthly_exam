@@ -1,0 +1,15 @@
+1.
+    def inorder(v):    # 중위순회를 하는 함수 생성하기
+         if v == 0:   # 노드가 존재하지 않으면 리턴
+            return
+         inorder(v.left)   # 왼쪽 자식을 먼저 순회
+         print(v, end= ' ')   # 방문시 해야할 작업을 수행 (이 경우에는 정점의 이름을 출력)
+         inorder(v.right)  # 오른쪽 자식을 다음으로 순회
+    
+
+2.
+    (1) 중위순회: B A D C E
+    (2) 후위순회: B D E C A
+
+
+
